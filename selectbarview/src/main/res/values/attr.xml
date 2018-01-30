@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectBarView">
+        <!--声明我们的属性，名称为default_size,取值类型为尺寸类型（dp,px等）-->
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="bgColor" format="color" />
+        <attr name="checkedBgColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="checkedTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="checkedTextSize" format="dimension" />
+        <attr name="splitLineColor" format="color" />
+        <attr name="splitLineWidth" format="dimension" />
+        <attr name="dotColor" format="color" />
+        <attr name="dotRadius" format="dimension" />
+    </declare-styleable>
+</resources>

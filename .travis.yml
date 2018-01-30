@@ -1,0 +1,44 @@
+language: android
+jdk: oraclejdk8
+sudo: required
+
+before_cache:
+  - rm -f ${TRAVIS_BUILD_DIR}/gradle/caches/modules-2/modules-2.lock # Avoid to repack it due locks
+  - rm -f ${TRAVIS_BUILD_DIR}/gradle/caches/3.3/classAnalysis/classAnalysis.lock
+  - rm -f ${TRAVIS_BUILD_DIR}/gradle/caches/3.3/jarSnapshots/jarSnapshots.lock
+
+cache:
+  directories:
+    - ${TRAVIS_BUILD_DIR}/gradle/caches/
+    - ${TRAVIS_BUILD_DIR}/gradle/wrapper/dists/
+
+notifications:
+  email: false
+
+before_install:
+  - mkdir "$ANDROID_HOME/licenses" || true
+  - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
+  - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+  - yes | sdkmanager "platforms;android-27"
+android:
+  components:
+    - tools
+    - build-tools-27.0.3
+    - platform-tools
+    - tools
+    - android-27
+    - extra-android-support
+    - extra-google-m2repository
+  licenses:
+    - android-sdk-license-.+
+    - '.+'
+
+script: ./gradlew build
+
+after_success:
+  - for name in $(find $TRAVIS_BUILD_DIR -name '*.apk'); do ls -hl $name;  done
+  - date
+
+after_failure:
+  for name in $(find $TRAVIS_BUILD_DIR -name lint-results*.xml); do echo $name; cat -n $name; done
+

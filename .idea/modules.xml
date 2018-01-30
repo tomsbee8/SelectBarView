@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SelectBarView.iml" filepath="$PROJECT_DIR$/SelectBarView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/app.iml" filepath="$PROJECT_DIR$/sample/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectbarview/selectbarview.iml" filepath="$PROJECT_DIR$/selectbarview/selectbarview.iml" />
+    </modules>
+  </component>
+</project>
