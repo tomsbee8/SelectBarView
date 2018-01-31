@@ -1,1 +1,3 @@
 waiting...
+
+compile 'cn.blinkdagger.selectbarview:selectbarview:1.0'

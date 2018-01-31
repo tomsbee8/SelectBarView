@@ -2,7 +2,11 @@
 .gradle
 /local.properties
 /.idea
+/selectbarview/build
+/selectbarview/selectbarview.iml
+/SelectBarView.iml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+/sample/keystore/*

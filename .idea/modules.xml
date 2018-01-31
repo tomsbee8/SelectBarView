@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SelectBarView.iml" filepath="$PROJECT_DIR$/SelectBarView.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/app.iml" filepath="$PROJECT_DIR$/sample/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectbarview/selectbarview.iml" filepath="$PROJECT_DIR$/selectbarview/selectbarview.iml" />
     </modules>
   </component>
