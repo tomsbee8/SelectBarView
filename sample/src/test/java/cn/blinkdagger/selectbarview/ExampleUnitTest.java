@@ -1,4 +1,4 @@
-package com.blinkdagger.fornever.selectbarview;
+package cn.blinkdagger.selectbarview;
 
 import org.junit.Test;
 

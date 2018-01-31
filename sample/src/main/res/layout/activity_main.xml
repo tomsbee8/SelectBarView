@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.blinkdagger.fornever.selectbarview.MainActivity">
+    tools:context=".MainActivity">
 
     <cn.blinkdagger.fornever.selectbarview.SelectBarView
         android:id="@+id/main_select_bar"

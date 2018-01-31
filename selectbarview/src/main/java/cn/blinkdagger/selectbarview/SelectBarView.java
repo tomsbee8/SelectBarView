@@ -1,4 +1,4 @@
-package cn.blinkdagger.fornever.selectbarview;
+package cn.blinkdagger.selectbarview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
