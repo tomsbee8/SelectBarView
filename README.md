@@ -1,6 +1,7 @@
 ## SelecBarView
 
 [![Build Status](https://www.travis-ci.org/tomsbee8/SelectBarView.svg?branch=master)](https://www.travis-ci.org/tomsbee8/SelectBarView)[ ![Download](https://api.bintray.com/packages/blinkdagger/SelectBarView/SelectBarView/images/download.svg) ](https://bintray.com/blinkdagger/SelectBarView/SelectBarView/_latestVersion)
+
 SelectBarView是一个可以水平切换的菜单,可以自定义边框的宽度、颜色 、圆角和item文字、背景的属性以及分割线的宽度、颜色等。每个Item还可以设置小圆点标记提醒 
 
 ![show](art/pic1.png)
